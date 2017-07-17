@@ -1,17 +1,18 @@
 from random import randint
 
-class die () :
+
+class die():
     def __init__(self, sides):
         self.sides = sides
 
     def roll_die(self, numberOfRolls):
         while numberOfRolls != 0:
-            print(str(randint(1,self.sides)))
-            numberOfRolls = numberOfRolls -1
+            print(str(randint(1, self.sides)))
+            numberOfRolls = numberOfRolls - 1
 
 
 print("Rolling a 6 sided dice 10 times")
-sixSideDice =  die(6)
+sixSideDice = die(6)
 sixSideDice.roll_die(10)
 
 print("Rolling a 10 sided dice 10 times")
